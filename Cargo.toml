@@ -1,0 +1,13 @@
+[package]
+name = "rs3"
+version = "0.1.0"
+authors = ["Yuta Utsugi <yutautsugi@outlook.com>"]
+edition = "2018"
+
+[dependencies]
+rusoto_core = "0.43"
+rusoto_s3 = "0.43"
+
+futures = "0.3.5"
+tokio = { version = "0.2.21", features = ["io-std", "macros", "rt-threaded"]}
+bytes = "0.5"

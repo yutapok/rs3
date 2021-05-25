@@ -151,7 +151,7 @@ impl<'a> S3Ctx<'a> {
 #[tokio::main]
 async fn main() {
     let args: Vec<String> = env::args().collect();
-    if args.len() < 2  {
+    if args.len() < 4  {
         return println!("Usage: {} <command> <bucket_name> <key> <filter>", args[0])
     }
 
